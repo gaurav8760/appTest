@@ -32,7 +32,7 @@ public class appTest {
         capabilities.setCapability("network", true);
         capabilities.setCapability("visual", true);
         AppiumDriver driver = new AppiumDriver(new
-                URL("https://gauravkb:DqLVVOF1ll4TTMyXXt3gslp8NZ8Ynon3vwcRd4eFTV5GLavGh9@beta-hub.lambdatest.com/wd/hub"), capabilities);
+                URL("https://username:accesskey@beta-hub.lambdatest.com/wd/hub"), capabilities);
         try {
             AndroidElement searchElement = (AndroidElement) new WebDriverWait(driver, 30).until(
                     ExpectedConditions.elementToBeClickable(MobileBy.AccessibilityId("Search Wikipedia")));
